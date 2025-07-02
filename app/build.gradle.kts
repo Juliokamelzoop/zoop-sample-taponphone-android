@@ -62,4 +62,17 @@ dependencies {
     implementation(libs.gson)
     implementation(libs.bundles.retrofit)
     runtimeOnly(libs.kotlin.reflect)
+// add
+    val zoopSdkVersion = "..."
+    debugImplementation("com.zoop.sdk:taponphone-staging-debug:$zoopSdkVersion")
+    releaseImplementation("com.zoop.sdk:taponphone-production-release:$zoopSdkVersion")
+
+    implementation("androidx.appcompat:appcompat:1.7.0")
+    implementation("androidx.core:core-ktx:1.13.0")
+    implementation("com.airbnb.android:lottie:6.4.1")
+    implementation("androidx.security:security-crypto:1.0.0")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    runtimeOnly("org.jetbrains.kotlin:kotlin-reflect:1.9.22")
+
 }
